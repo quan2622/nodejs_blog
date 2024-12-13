@@ -4,6 +4,28 @@
     background-color: yellow;
 }
 
-h1 {
-    color: $violet_color;
+.card {
+    height: 470px;
+    margin-bottom: 10px;
+}
+
+.card .card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.btn_desgin {
+    position: absolute;
+    bottom: 20px;
+}
+
+.user-avata {
+    margin-right: 5px;
+}
+
+.select-all-option {
+    width: 180px;
+    margin: 0 20px;
 }
