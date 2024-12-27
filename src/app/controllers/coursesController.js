@@ -41,7 +41,7 @@ class coursesController {
       .catch(next);
   }
 
-  // [DELETE] /course/:id
+  // [DELETE] /course/:id -> this is soft delete
   delete(req, res, next) {
     // res.json(req.body);
     Course.delete({_id: req.params.id})
@@ -49,7 +49,7 @@ class coursesController {
       .catch(next);
   }
 
-  // [DELETE] /course/:id/force -> this is soft delete
+  // [DELETE] /course/:id/force -> force delete
   forceDelete(req, res, next) {
     // res.json(req.body);
     Course.deleteOne({_id: req.params.id})
